@@ -1,16 +1,17 @@
 # crypto_port
 
-A new Flutter project.
+An open-source app made with Flutter to track your favorite coins.
 
-## Getting Started
+**IMPORTANT: This app is still in development and is not ready for production.**
 
-This project is a starting point for a Flutter application.
+## Features 
 
-A few resources to get you started if this is your first Flutter project:
+As mentioned above, this app is in development so the features listed below are **planned** features 
+and are not yet implemented.
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+- [ ] Track your favorite coins
+- [ ] Charts
+- [ ] Portfolio
+- [ ] Login
+And more! 
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
