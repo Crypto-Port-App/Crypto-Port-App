@@ -4,6 +4,7 @@ import '../../Core/Animations/fade_animation.dart';
 import '../../Core/Colors/hex_color.dart';
 import '../Forgot Password/Forgot_Password_Screen.dart';
 import '../Sign Up Screen/signup_screen.dart';
+import '../Login Screen/guest.dart';
 
 enum FormData {
   email,
@@ -82,9 +83,9 @@ class _LoginScreenState extends State<LoginScreen> {
                         const SizedBox(
                           height: 10,
                         ),
-                        FadeAnimation(
+                        const FadeAnimation(
                           delay: 1,
-                          child: const Text(
+                          child: Text(
                             "Please sign in to continue",
                             style: TextStyle(
                                 color: Colors.white, letterSpacing: 0.5),
@@ -217,6 +218,13 @@ class _LoginScreenState extends State<LoginScreen> {
                                 //   return MyApp(isLogin: true);
                                 // }));
                               },
+                              style: TextButton.styleFrom(
+                                  backgroundColor: Color(0xFF2697FF),
+                                  padding: const EdgeInsets.symmetric(
+                                      vertical: 14.0, horizontal: 80),
+                                  shape: RoundedRectangleBorder(
+                                      borderRadius:
+                                          BorderRadius.circular(12.0))),
                               child: const Text(
                                 "Login",
                                 style: TextStyle(
@@ -225,14 +233,7 @@ class _LoginScreenState extends State<LoginScreen> {
                                   fontSize: 16.0,
                                   fontWeight: FontWeight.bold,
                                 ),
-                              ),
-                              style: TextButton.styleFrom(
-                                  backgroundColor: Color(0xFF2697FF),
-                                  padding: const EdgeInsets.symmetric(
-                                      vertical: 14.0, horizontal: 80),
-                                  shape: RoundedRectangleBorder(
-                                      borderRadius:
-                                          BorderRadius.circular(12.0)))),
+                              )),
                         ),
                         Row(children: <Widget>[
                           Expanded(
@@ -266,7 +267,11 @@ class _LoginScreenState extends State<LoginScreen> {
                           delay: 1,
                           child: TextButton(
                               onPressed: () {
-                                // TODO: Add login logic here.
+                                Navigator.pop(context);
+                                Navigator.of(context)
+                                    .push(MaterialPageRoute(builder: (context) {
+                                  return GuestScreen();
+                                }));
                               },
                               style: TextButton.styleFrom(
                                   backgroundColor: Color(0xFF2697FF),
@@ -302,7 +307,7 @@ class _LoginScreenState extends State<LoginScreen> {
                       Navigator.pop(context);
                       Navigator.of(context)
                           .push(MaterialPageRoute(builder: (context) {
-                        return ForgotPasswordScreen();
+                        return const ForgotPasswordScreen();
                       }));
                     }),
                     child: Text("Can't Log In?",
@@ -329,7 +334,7 @@ class _LoginScreenState extends State<LoginScreen> {
                           Navigator.pop(context);
                           Navigator.of(context)
                               .push(MaterialPageRoute(builder: (context) {
-                            return SignupScreen();
+                            return const SignupScreen();
                           }));
                         },
                         child: Text("Sign up",
