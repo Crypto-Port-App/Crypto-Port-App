@@ -15,3 +15,7 @@ and are not yet implemented.
 - [ ] Login
 And more! 
 
+## Known Issues
+
+Right now, the text in the text fields does not center nicely. This is a known issue and will be fixed in the future.
+
