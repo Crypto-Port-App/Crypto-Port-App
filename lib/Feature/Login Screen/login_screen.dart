@@ -102,7 +102,6 @@ class _LoginScreenState extends State<LoginScreen> {
                                   ? enabled
                                   : backgroundColor,
                             ),
-                            padding: const EdgeInsets.all(5.0),
                             child: TextField(
                               controller: emailController,
                               onTap: () {
@@ -150,7 +149,6 @@ class _LoginScreenState extends State<LoginScreen> {
                                 color: selected == FormData.password
                                     ? enabled
                                     : backgroundColor),
-                            padding: const EdgeInsets.all(5.0),
                             child: TextField(
                               controller: passwordController,
                               onTap: () {

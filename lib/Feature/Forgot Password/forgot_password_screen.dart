@@ -102,7 +102,6 @@ class _ForgotPasswordScreenState extends State<ForgotPasswordScreen> {
                                   ? enabled
                                   : backgroundColor,
                             ),
-                            padding: const EdgeInsets.all(5.0),
                             child: TextField(
                               controller: emailController,
                               onTap: () {

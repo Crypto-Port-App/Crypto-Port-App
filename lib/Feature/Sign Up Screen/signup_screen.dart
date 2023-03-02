@@ -104,7 +104,6 @@ class _SignupScreenState extends State<SignupScreen> {
                                   ? enabled
                                   : backgroundColor,
                             ),
-                            padding: const EdgeInsets.all(5.0),
                             child: TextField(
                               controller: userNameController,
                               onTap: () {
@@ -113,22 +112,21 @@ class _SignupScreenState extends State<SignupScreen> {
                                 });
                               },
                               decoration: InputDecoration(
-                                enabledBorder: InputBorder.none,
-                                border: InputBorder.none,
-                                prefixIcon: Icon(
-                                  Icons.title,
-                                  color: selected == FormData.userName
-                                      ? enabledtxt
-                                      : deaible,
-                                  size: 20,
-                                ),
-                                hintText: 'Username',
-                                hintStyle: TextStyle(
+                                  enabledBorder: InputBorder.none,
+                                  border: InputBorder.none,
+                                  prefixIcon: Icon(
+                                    Icons.title,
                                     color: selected == FormData.userName
                                         ? enabledtxt
                                         : deaible,
-                                    fontSize: 12),
-                              ),
+                                    size: 20,
+                                  ),
+                                  hintText: 'Username',
+                                  hintStyle: TextStyle(
+                                      color: selected == FormData.userName
+                                          ? enabledtxt
+                                          : deaible,
+                                      fontSize: 12)),
                               textAlignVertical: TextAlignVertical.center,
                               style: TextStyle(
                                   color: selected == FormData.userName
@@ -153,7 +151,6 @@ class _SignupScreenState extends State<SignupScreen> {
                                   ? enabled
                                   : backgroundColor,
                             ),
-                            padding: const EdgeInsets.all(5.0),
                             child: TextField(
                               controller: emailController,
                               onTap: () {
@@ -201,7 +198,6 @@ class _SignupScreenState extends State<SignupScreen> {
                                 color: selected == FormData.password
                                     ? enabled
                                     : backgroundColor),
-                            padding: const EdgeInsets.all(5.0),
                             child: TextField(
                               controller: passwordController,
                               onTap: () {
@@ -268,7 +264,6 @@ class _SignupScreenState extends State<SignupScreen> {
                                 color: selected == FormData.confirmPassword
                                     ? enabled
                                     : backgroundColor),
-                            padding: const EdgeInsets.all(5.0),
                             child: TextField(
                               controller: confirmPasswordController,
                               onTap: () {
