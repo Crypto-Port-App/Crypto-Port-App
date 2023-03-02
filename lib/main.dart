@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'Feature/Login Screen/login_screen.dart';
+
 void main() {
   runApp(const MyApp());
 }
@@ -13,7 +15,8 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Crypto App',
       theme: ThemeData(
-      primarySwatch: : Colors.blue,),
+        primarySwatch: Colors.blue,
+      ),
       home: LoginScreen(),
     );
   }
