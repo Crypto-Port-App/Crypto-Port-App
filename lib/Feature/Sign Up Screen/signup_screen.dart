@@ -7,6 +7,8 @@ import '../Login Screen/Login_Screen.dart';
 enum FormData { userName, email, password, confirmPassword }
 
 class SignupScreen extends StatefulWidget {
+  const SignupScreen({super.key});
+
   @override
   State<SignupScreen> createState() => _SignupScreenState();
 }

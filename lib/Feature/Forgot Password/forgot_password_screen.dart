@@ -8,6 +8,8 @@ import '../Pin Code/Pin_Code_Screen.dart';
 enum FormData { email }
 
 class ForgotPasswordScreen extends StatefulWidget {
+  const ForgotPasswordScreen({super.key});
+
   @override
   State<ForgotPasswordScreen> createState() => _ForgotPasswordScreenState();
 }
