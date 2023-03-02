@@ -232,6 +232,57 @@ class _LoginScreenState extends State<LoginScreen> {
                                       borderRadius:
                                           BorderRadius.circular(12.0)))),
                         ),
+                        Row(children: <Widget>[
+                          Expanded(
+                              child: Container(
+                                  margin: const EdgeInsets.only(
+                                      top: 5.0, bottom: 5.0),
+                                  child: const Divider(
+                                    color: Colors.grey,
+                                    indent: 10,
+                                    endIndent: 5,
+                                  ))),
+                          const Text("OR",
+                              style: TextStyle(
+                                color: Colors.grey,
+                                letterSpacing: 0.5,
+                                fontSize: 12.0,
+                                fontWeight: FontWeight.bold,
+                              )),
+                          Expanded(
+                              child: Container(
+                            margin:
+                                const EdgeInsets.only(top: 5.0, bottom: 5.0),
+                            child: const Divider(
+                              color: Colors.grey,
+                              indent: 5,
+                              endIndent: 10,
+                            ),
+                          ))
+                        ]),
+                        FadeAnimation(
+                          delay: 1,
+                          child: TextButton(
+                              onPressed: () {
+                                // TODO: Add login logic here.
+                              },
+                              style: TextButton.styleFrom(
+                                  backgroundColor: Color(0xFF2697FF),
+                                  padding: const EdgeInsets.symmetric(
+                                      vertical: 14.0, horizontal: 26),
+                                  shape: RoundedRectangleBorder(
+                                      borderRadius:
+                                          BorderRadius.circular(12.0))),
+                              child: const Text(
+                                "Continue as Guest",
+                                style: TextStyle(
+                                  color: Colors.white,
+                                  letterSpacing: 0.5,
+                                  fontSize: 16.0,
+                                  fontWeight: FontWeight.bold,
+                                ),
+                              )),
+                        ),
                       ],
                     ),
                   ),
