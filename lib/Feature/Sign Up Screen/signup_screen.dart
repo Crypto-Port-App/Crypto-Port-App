@@ -366,7 +366,7 @@ class _SignupScreenState extends State<SignupScreen> {
                             return const LoginScreen();
                           }));
                         },
-                        child: Text("Sing in",
+                        child: Text("Sign in",
                             style: TextStyle(
                                 color: Colors.white.withOpacity(0.9),
                                 fontWeight: FontWeight.bold,
