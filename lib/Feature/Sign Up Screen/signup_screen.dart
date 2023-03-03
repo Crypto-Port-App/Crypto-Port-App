@@ -83,13 +83,11 @@ class _SignupScreenState extends State<SignupScreen> {
                         ),
                         FadeAnimation(
                           delay: 1,
-                          child: Container(
-                            child: Text(
-                              "Create your account",
-                              style: TextStyle(
-                                  color: Colors.white.withOpacity(0.9),
-                                  letterSpacing: 0.5),
-                            ),
+                          child: Text(
+                            "Create your account",
+                            style: TextStyle(
+                                color: Colors.white.withOpacity(0.9),
+                                letterSpacing: 0.5),
                           ),
                         ),
                         const SizedBox(
@@ -329,7 +327,14 @@ class _SignupScreenState extends State<SignupScreen> {
                           delay: 1,
                           child: TextButton(
                               onPressed: () {},
-                              child: Text(
+                              style: TextButton.styleFrom(
+                                  backgroundColor: const Color(0xFF2697FF),
+                                  padding: const EdgeInsets.symmetric(
+                                      vertical: 14.0, horizontal: 80),
+                                  shape: RoundedRectangleBorder(
+                                      borderRadius:
+                                          BorderRadius.circular(12.0))),
+                              child: const Text(
                                 "Sign Up",
                                 style: TextStyle(
                                   color: Colors.white,
@@ -337,14 +342,7 @@ class _SignupScreenState extends State<SignupScreen> {
                                   fontSize: 16.0,
                                   fontWeight: FontWeight.bold,
                                 ),
-                              ),
-                              style: TextButton.styleFrom(
-                                  backgroundColor: const Color(0xFF2697FF),
-                                  padding: const EdgeInsets.symmetric(
-                                      vertical: 14.0, horizontal: 80),
-                                  shape: RoundedRectangleBorder(
-                                      borderRadius:
-                                          BorderRadius.circular(12.0)))),
+                              )),
                         ),
                       ],
                     ),
@@ -373,7 +371,7 @@ class _SignupScreenState extends State<SignupScreen> {
                           Navigator.pop(context);
                           Navigator.of(context)
                               .push(MaterialPageRoute(builder: (context) {
-                            return LoginScreen();
+                            return const LoginScreen();
                           }));
                         },
                         child: Text("Sing in",
