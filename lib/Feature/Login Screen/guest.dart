@@ -9,6 +9,8 @@ import '../../Core/Colors/hex_color.dart';
 import '../Login Screen/login_screen.dart';
 
 class GuestScreen extends StatefulWidget {
+  const GuestScreen({super.key});
+
   @override
   State<GuestScreen> createState() => _GuestScreenState();
 }
