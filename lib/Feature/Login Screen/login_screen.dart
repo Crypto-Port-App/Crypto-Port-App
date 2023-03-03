@@ -270,7 +270,7 @@ class _LoginScreenState extends State<LoginScreen> {
                                 Navigator.pop(context);
                                 Navigator.of(context)
                                     .push(MaterialPageRoute(builder: (context) {
-                                  return GuestScreen();
+                                  return const GuestScreen();
                                 }));
                               },
                               style: TextButton.styleFrom(
