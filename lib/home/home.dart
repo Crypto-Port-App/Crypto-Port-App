@@ -8,12 +8,10 @@ class HomePage extends StatefulWidget {
   const HomePage({super.key, this.title = 'Home'});
 
   @override
-  _HomePageState createState() => _HomePageState();
+  State<HomePage> createState() => _HomePageState();
 }
 
 class _HomePageState extends State<HomePage> {
-  int _selectedDestination = 0;
-
   @override
   Widget build(BuildContext context) {
     final theme = Theme.of(context);
