@@ -219,7 +219,7 @@ class _LoginScreenState extends State<LoginScreen> {
                                 // }));
                               },
                               style: TextButton.styleFrom(
-                                  backgroundColor: Color(0xFF2697FF),
+                                  backgroundColor: const Color(0xFF2697FF),
                                   padding: const EdgeInsets.symmetric(
                                       vertical: 14.0, horizontal: 80),
                                   shape: RoundedRectangleBorder(
@@ -274,7 +274,7 @@ class _LoginScreenState extends State<LoginScreen> {
                                 }));
                               },
                               style: TextButton.styleFrom(
-                                  backgroundColor: Color(0xFF2697FF),
+                                  backgroundColor: const Color(0xFF2697FF),
                                   padding: const EdgeInsets.symmetric(
                                       vertical: 14.0, horizontal: 26),
                                   shape: RoundedRectangleBorder(
