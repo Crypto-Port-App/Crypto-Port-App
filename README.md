@@ -17,5 +17,6 @@ And more!
 
 ## Known Issues
 
-Right now, the text in the text fields does not center nicely. This is a known issue and will be fixed in the future.
+- Issues with text placement in text fields
+- SocketException when fetching background image
 
