@@ -98,7 +98,7 @@ class _GuestScreenState extends State<GuestScreen> {
                                     // TODO: Navigate to the home screen.
                                   },
                                   style: TextButton.styleFrom(
-                                      backgroundColor: Color(0xFF2697FF),
+                                      backgroundColor: const Color(0xFF2697FF),
                                       padding: const EdgeInsets.symmetric(
                                           vertical: 14.0, horizontal: 80),
                                       shape: RoundedRectangleBorder(
