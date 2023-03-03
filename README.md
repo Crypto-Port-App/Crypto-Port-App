@@ -19,4 +19,3 @@ And more!
 
 - Issues with text placement in text fields
 - SocketException when fetching background image
-- Specific to guest screen: checkbox not unchecking when tapped again

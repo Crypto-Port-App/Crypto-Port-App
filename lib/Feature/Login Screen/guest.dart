@@ -18,6 +18,12 @@ class GuestScreen extends StatefulWidget {
 class _GuestScreenState extends State<GuestScreen> {
   bool _showAgain = false;
 
+  void checkboxCallBack(bool? checkboxState) {
+    setState(() {
+      _showAgain = checkboxState ?? true;
+    });
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -78,18 +84,12 @@ class _GuestScreenState extends State<GuestScreen> {
                             const SizedBox(height: 10),
                             FadeAnimation(
                                 delay: 1,
-                                child: Container(
-                                    child: CheckboxListTile(
-                                  title: const Text('Do not show again'),
-                                  value: _showAgain,
-                                  onChanged: (!_showAgain)
-                                      ? (bool? value) {
-                                          setState(() {
-                                            _showAgain = value!;
-                                          });
-                                        }
-                                      : null,
-                                ))),
+                                child: ListTile(
+                                    title: const Text(
+                                      'Do not show this again',
+                                    ),
+                                    trailing: ReminderCheckbox(
+                                        _showAgain, checkboxCallBack))),
                             const SizedBox(height: 10),
                             FadeAnimation(
                               delay: 1,
@@ -147,6 +147,23 @@ class _GuestScreenState extends State<GuestScreen> {
                           ),
                         ]))
               ])))),
+    );
+  }
+}
+
+class ReminderCheckbox extends StatelessWidget {
+  final bool checkboxState;
+  final Function(bool?) toggleCheckboxState;
+
+  const ReminderCheckbox(this.checkboxState, this.toggleCheckboxState,
+      {super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Checkbox(
+      activeColor: Colors.lightBlueAccent,
+      value: checkboxState,
+      onChanged: toggleCheckboxState,
     );
   }
 }
