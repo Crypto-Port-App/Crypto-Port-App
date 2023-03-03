@@ -1,7 +1,5 @@
 // This screen will be shown if the user chooses to continue as a guest.
 
-// KNOWN ISSUE: The checkbox is not unchecking when the user clicks on it.
-
 import 'package:flutter/material.dart';
 
 import '../../Core/Animations/fade_animation.dart';
