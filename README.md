@@ -18,4 +18,3 @@ And more!
 ## Known Issues
 
 - Issues with text placement in text fields
-- SocketException when fetching background image

@@ -67,14 +67,6 @@ class _PinCodeVerificationScreenState extends State<PinCodeVerificationScreen> {
               HexColor("#08418e")
             ],
           ),
-          image: DecorationImage(
-            fit: BoxFit.cover,
-            colorFilter: ColorFilter.mode(
-                HexColor("#fff").withOpacity(0.2), BlendMode.dstATop),
-            image: const NetworkImage(
-              'https://mir-s3-cdn-cf.behance.net/project_modules/fs/01b4bd84253993.5d56acc35e143.jpg',
-            ),
-          ),
         ),
         child: Center(
           child: SingleChildScrollView(
