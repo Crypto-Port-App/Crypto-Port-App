@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../Feature/Rising page/rising_page.dart';
+import '../Feature/Trending Page/trending_page.dart';
 
 class HomePage extends StatefulWidget {
   final String title;
@@ -45,6 +46,16 @@ class _HomePageState extends State<HomePage> {
                 }));
               }),
           ListTile(
+              leading: const Icon(Icons.show_chart_rounded),
+              title: const Text('Trending'),
+              onTap: () {
+                Navigator.pop(context);
+                Navigator.of(context)
+                    .push(MaterialPageRoute(builder: (context) {
+                  return const TrendingPage();
+                }));
+              }),
+          ListTile(
               leading: const Icon(Icons.currency_exchange_rounded),
               title: const Text('Coins'),
               onTap: () {
@@ -71,12 +82,6 @@ class _HomePageState extends State<HomePage> {
           mainAxisSpacing: 20,
           padding: const EdgeInsets.all(20),
           childAspectRatio: 3 / 2,
-          children: [
-            Image.asset('assets/nav-drawer-1.jpg'),
-            Image.asset('assets/nav-drawer-2.jpg'),
-            Image.asset('assets/nav-drawer-3.jpg'),
-            Image.asset('assets/nav-drawer-4.jpg'),
-          ],
         ));
   }
 }
