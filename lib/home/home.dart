@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 import '../Feature/Rising page/rising_page.dart';
 import '../Feature/Trending Page/trending_page.dart';
+import '../Feature/Portfolio/portfolio_page.dart';
 
 class HomePage extends StatefulWidget {
   final String title;
@@ -72,7 +73,7 @@ class _HomePageState extends State<HomePage> {
                 Navigator.pop(context);
                 Navigator.of(context)
                     .push(MaterialPageRoute(builder: (context) {
-                  return const RisingPage();
+                  return const PortfolioPage();
                 }));
               }),
         ])),
