@@ -9,10 +9,13 @@ An open-source app made with Flutter to track your favorite coins.
 As mentioned above, this app is in development so the features listed below are **planned** features 
 and are not yet implemented.
 
-- [ ] Track your favorite coins
-- [ ] Charts
+- [ ] Track your favorite coins 
+- [ ] Trending coins
+- [ ] Charting
 - [ ] Portfolio
 - [ ] Login
+- [ ] Transactions
+
 And more! 
 
 ## Known Issues
